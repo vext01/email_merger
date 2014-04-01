@@ -64,29 +64,22 @@ e-mail is sent.
 
 Flags:
 
-  -d
-    Dummy run. Do everything except send e-mails.
-
-  -e
-    Individually edit each e-mail with $EDITOR before it is sent.
-
-  -o <dir>
-    Save each e-mail being sent into dir.
-
+  * -d: Dummy run. Do everything except send e-mails.
+  * -e: Individually edit each e-mail with $EDITOR before it is sent.
+  * -o <dir>: Save each e-mail being sent into dir.
 
 ## Customisation
 
 email_merger can be customised via the optional $HOME/.email_merger file,
 which is a normal Python file. The following variables may be set:
 
-  sendmail. Default: /usr/sbin/sendmail -oem -oi
+  * sendmail. Default: /usr/sbin/sendmail -oem -oi
     The location of the sendmail binary. To send e-mail via a remote
     machine, one can use ssh e.g:
 	  /usr/bin/ssh -q -C -l myusername remote.com /usr/sbin/sendmail -oem -oi
 
-  post_sendmail_delay. Default: 1
+  * post_sendmail_delay. Default: 1
     The length of time to delay, in seconds, after sending each e-mail.
-
 
 ##  Install
  
