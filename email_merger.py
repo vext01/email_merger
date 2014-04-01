@@ -27,7 +27,7 @@ from cStringIO import StringIO
 
 
 
-PROG_NAME = "email_merger"
+PROG_NAME = sys.argv[0]
 PROG_VERSION_NUMERIC = "0.08"
 PROG_VERSION_DATE = "2014/04/01"
 PROG_VERSION = "%s (%s)" % (PROG_VERSION_NUMERIC, PROG_VERSION_DATE)
