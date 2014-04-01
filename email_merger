@@ -1,6 +1,6 @@
-#! /usr/bin/env python
+#!/usr/bin/env python2.7
 
-# Copyright (c) 2005-2007 Laurence Tratt
+# Copyright (c) 2005-2014 Laurence Tratt
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
@@ -28,8 +28,10 @@ from cStringIO import StringIO
 
 
 PROG_NAME = "email_merger"
-PROG_VERSION = "0.07 (2007/04/08)"
-PROG_COPYRIGHT = "Copyright (C) Laurence Tratt 2005-2007"
+PROG_VERSION_NUMERIC = "0.08"
+PROG_VERSION_DATE = "2014/04/01"
+PROG_VERSION = "%s (%s)" % (PROG_VERSION_NUMERIC, PROG_VERSION_DATE)
+PROG_COPYRIGHT = "Copyright (C) Laurence Tratt 2005-2014"
 
 CONFIG_PATH = "$HOME/.email_merger"
 
